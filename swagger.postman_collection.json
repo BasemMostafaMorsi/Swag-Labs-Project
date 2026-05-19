@@ -1,0 +1,342 @@
+{
+  "info": {
+    "_postman_id": "8d03a37a-225c-4ef6-a040-8ef7755591c0",
+    "name": "swagger",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29522001"
+  },
+  "item": [
+    {
+      "name": "create user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 13,\r\n  \"username\": \"morsy\",\r\n  \"firstName\": \"basem\",\r\n  \"lastName\": \"mo\",\r\n  \"email\": \"kk@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"phone\": \"01017189292\",\r\n  \"userStatus\": 22\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/user",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create With Array",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n  \"id\": 0,\r\n  \"username\": \"morsy\",\r\n  \"firstName\": \"basem\",\r\n  \"lastName\": \"mo\",\r\n  \"email\": \"kk@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"phone\": \"01017189292\",\r\n  \"userStatus\": 0\r\n}\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/user/createWithArray",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "createWithArray"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "user login",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\r\n  \"username\": \"morsy\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/user/login",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "user logout",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/user/logout",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "logout"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update username",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"username\": \"ahmed\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/user/{username}",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "{username}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete username",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/user/ahmed",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "ahmed"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update username",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"username\": \"ahmed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/user/{username}",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "{username}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create With List",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n  \"id\": 0,\r\n  \"username\": \"morsy\",\r\n  \"firstName\": \"basem\",\r\n  \"lastName\": \"mo\",\r\n  \"email\": \"kk@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"phone\": \"01017189292\",\r\n  \"userStatus\": 0\r\n}\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/user/createWithList",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "createWithList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "store order",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 0,\r\n  \"petId\": 0,\r\n  \"quantity\": 0,\r\n  \"shipDate\": \"2025-11-19T19:34:46.693Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/store/order",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "store",
+            "order"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "show store order",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/v2/store/order/9223372036854758719",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "v2",
+            "store",
+            "order",
+            "9223372036854758719"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "store inventory",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "123456",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "api_key",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "",
+            "value": "",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/store/inventory",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "store",
+            "inventory"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
